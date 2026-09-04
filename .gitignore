@@ -187,3 +187,9 @@ cython_debug/
 *.engine
 models/
 datasets/
+
+# Ignore all contents inside data/
+data/*
+
+# Do NOT ignore the animals database
+!data/animals.json

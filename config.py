@@ -57,15 +57,16 @@ REID_CLASSES = {"cow", "horse"}
 # =====================================================================
 # ПУТИ К ДАТАСЕТАМ
 # =====================================================================
-DATASET_RAW_DIR = "dataset_raw"
-DATASET_CROPS_DIR = "dataset_crops"
-REID_DATASET_DIR = "reid_dataset"
-MISCLASSIFIED_DIR = "dataset_misclassified"
-MISCLASSIFIED_FULL_FRAMES_DIR = "dataset_misclassified_full_frames"
-PENDING_FULL_FRAMES_DIR = "dataset_pending_full_frames"
-ANIMALS_DB_PATH = "animals.json"
+BASE_DIR = "data"
+DATASET_RAW_DIR = os.path.join(BASE_DIR, "dataset_raw")
+DATASET_CROPS_DIR = os.path.join(BASE_DIR, "dataset_crops")
+REID_DATASET_DIR = os.path.join(BASE_DIR, "reid_dataset")
+MISCLASSIFIED_DIR = os.path.join(BASE_DIR, "dataset_misclassified")
+MISCLASSIFIED_FULL_FRAMES_DIR = os.path.join(BASE_DIR, "dataset_misclassified_full_frames")
+PENDING_FULL_FRAMES_DIR = os.path.join(BASE_DIR, "dataset_pending_full_frames")
+ANIMALS_DB_PATH = os.path.join(BASE_DIR, "animals.json")
 
-for _dir in (DATASET_RAW_DIR, DATASET_CROPS_DIR, REID_DATASET_DIR,
+for _dir in (BASE_DIR,DATASET_RAW_DIR, DATASET_CROPS_DIR, REID_DATASET_DIR,
              MISCLASSIFIED_DIR, MISCLASSIFIED_FULL_FRAMES_DIR, PENDING_FULL_FRAMES_DIR):
     os.makedirs(_dir, exist_ok=True)
 
