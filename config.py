@@ -39,10 +39,11 @@ CANDIDATE_STREAMS = {
 # =====================================================================
 # МОДЕЛИ
 # =====================================================================
-MODEL_PATH = "best.onnx"
+DIR_MODELS = "models"
 
-COW_REID_MODEL_PATH = "cow_reid_resnet50.onnx"
-COW_REID_CLASSES_PATH = "cow_classes.json"
+MODEL_PATH = os.path.join(DIR_MODELS, "best.onnx")
+COW_REID_MODEL_PATH = os.path.join(DIR_MODELS, "cow_reid_resnet50.onnx")
+COW_REID_CLASSES_PATH = os.path.join(DIR_MODELS, "cow_classes.json")
 # Ниже какой уверенности не показываем подсказку вообще — лучше промолчать,
 # чем предложить явно неверный вариант (запутает больше, чем поможет).
 REID_MIN_CONFIDENCE_TO_SHOW = 0.15
