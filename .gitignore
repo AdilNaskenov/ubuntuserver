@@ -185,3 +185,6 @@ data/*
 
 # Do NOT ignore the animals database
 !data/animals.json
+
+# Visual Studio 2022
+.vs/
