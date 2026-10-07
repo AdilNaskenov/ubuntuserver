@@ -2,6 +2,7 @@
 Точка входа. Собирает Dispatcher из роутеров, запускает основной цикл
 обработки видео и поллинг Telegram-бота.
 """
+# docker run --rm my_ubuntu_server
 import logger_setup  # noqa: F401 — вызывает logging.basicConfig() до первого getLogger()
 
 import asyncio
@@ -9,7 +10,7 @@ import logging
 import time
 import cv2
 from aiogram import Dispatcher
-from aiogram.types import BufferedInputFile
+from aiogram.types import BufferedInputFile 
 
 import config
 import camera

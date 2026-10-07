@@ -1,0 +1,9 @@
+python-dotenv
+ewelink
+psutil
+aiogram
+opencv-python-headless
+onnxruntime
+pillow
+scikit-learn
+numpy
